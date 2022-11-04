@@ -37,6 +37,7 @@ Aquí se uso "fit" para entrenar al dataset de entrenamiento, en caso de Árbole
 ![66](https://user-images.githubusercontent.com/103965538/199860980-90199c2a-d440-40cd-b92a-8318fdcd5dea.PNG)
 
 - 11. Evaluacíon de las métricas de evaluación.
+Con el Árboles de decisiones
 ![55](https://user-images.githubusercontent.com/103965538/199860907-d74a973e-dcab-45a6-a7d3-7709e6692c99.PNG)
 
 Para concluir, en la Evaluacion de las métricas se tuvo en cuenta el accuracy y el recall.
