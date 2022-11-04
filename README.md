@@ -1,5 +1,5 @@
 ## EDA, feature engineerging y pipeline de Machine Learning de Mercado Inmoviliario en COLOMBIA
-Segun a los datasets proporcionados por el bootcamp SOY HENRY, que es acerca de del mercado inmoviliario de Colombia:
+Segun a los datasets proporcionados por el bootcamp SOY HENRY, que es acerca del mercado inmoviliario de Colombia:
 - 'properties_colombia_train.csv': Contiene 197549 registros y 26 dimensiones, el cual incluye la información numérica del precio.
 - 'propiedades_colombia_test.csv': Contiene 65850 registros y 25 dimensiones, el cual no incluye la información del precio.
 
