@@ -39,6 +39,6 @@ Aquí se uso "fit" para entrenar al dataset de entrenamiento, en caso de Árbole
 - 11. Evaluacíon de las métricas de evaluación.
 ![55](https://user-images.githubusercontent.com/103965538/199860907-d74a973e-dcab-45a6-a7d3-7709e6692c99.PNG)
 
-Para concluir se en la Evaluacion de las métricas se tuvo en cuenta el accuracy y el recall.
+Para concluir, en la Evaluacion de las métricas se tuvo en cuenta el accuracy y el recall.
 Se puede ver que el algoritmo de Clasificación de Árboles de decisiones es el algoritmo mas óptimo para predecir si es caro o barato en este proyecto de Mercado Inmoviliario en COLOMBIA.
 
