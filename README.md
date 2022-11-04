@@ -3,8 +3,7 @@ Según a los datasets proporcionados por el bootcamp SOY HENRY, que es acerca de
 - 'properties_colombia_train.csv': Contiene 197549 registros y 26 dimensiones, el cual incluye la información numérica del precio.
 - 'propiedades_colombia_test.csv': Contiene 65850 registros y 25 dimensiones, el cual no incluye la información del precio.
 
-Este proyecto consiste en realizar un modelo predictivo que prediga el precio de una inmoviliaria entre caro y barato, se calculó el promedio de la columna price (643605091.0064613), donde se asignó "1" a los mayores al promedio de "price" = caro
-y se asignó "0" a los menores al promedio de "price" = barato.
+Este proyecto consiste en realizar un modelo predictivo que prediga el precio de una inmoviliaria entre caro y barato, se calculó el promedio de la columna price (643605091.0064613), donde se asignó "1" a aquellos que son mayores al promedio de "price" = caro y se asignó "0" a los menores al promedio de "price" = barato.
 
 ## Para esto se hizo el el EDA (Análisis Exploratorio de datos), feature engineerging y pipeline de Machine Learning de Mercado, se tuvo en cuenta los siguientes pasos:
 
@@ -40,6 +39,6 @@ Aquí se uso "fit" para entrenar al dataset de entrenamiento, en caso de Árbole
 Con el algoritmo de Árboles de decisiones
 ![55](https://user-images.githubusercontent.com/103965538/199860907-d74a973e-dcab-45a6-a7d3-7709e6692c99.PNG)
 
-Para concluir, en la Evaluacion de las métricas se tuvo en cuenta el accuracy y el recall.
+Para concluir, en la Evaluación de las métricas se tuvo en cuenta el accuracy y el recall.
 Se puede ver que el algoritmo de Clasificación de Árboles de decisiones es el algoritmo mas óptimo para predecir si es caro o barato el precio de una inmoviliaria con es este proyecto con datos de Mercado Inmoviliario en COLOMBIA.
 
