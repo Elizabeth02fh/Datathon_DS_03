@@ -10,7 +10,7 @@ y se asignó "0" a los menores al promedio de "price" = barato.
 
 - 1. Análisis de los datos de los datasets.
 Para esta etapa se utilizó diversós librerias y módulos de python como: pandas,  numpy, los módulos de .head(), .info() y entre otros.
-![11](https://user-images.githubusercontent.com/103965538/199859913-df6bdb99-197d-4b5d-98bf-df6c4d0093fc.PNG)
+![11](https://user-images.githubusercontent.com/103965538/199861223-864d1ed0-0b40-4cb7-b24f-9fe22d1e51b2.PNG)
 
 - 2. Visualización de datos.
 Aquí se visualizó los datos con "matplotlib" que sirve para graficar graficos en python, mporté la librería folium y heatmap para realizar las coordenadas geoespaciales.
@@ -26,7 +26,7 @@ Es importante que se tenga un buen análisis crítico ya que aquí segun al aná
 Aquí Importé la librería preprocesing y LabelEncoder que ayuda a transformar los valores categóricos a numéricos con un orden increíble. "LabelEncoder": va asignádo con un número diferente a cada varible categórica 
 - 7. Selección de características o tambien eliminación de columnas irrelevantes parte 2.
 Se importa la librería "seaborn" para graficar y usar estadísticos como la correlación, se realizó gracias a los filtros de correlacion a los atributos, osea que características tienen mayor correlación con la variable a predecir.
-![333](https://user-images.githubusercontent.com/103965538/199860533-89c89a1c-9d35-4b4f-9b67-02ff80378711.PNG)
+![333](https://user-images.githubusercontent.com/103965538/199861476-96d001c0-9d95-49f5-a731-351204c38b57.PNG)
 
 - 8. Modelos de clasificación: El tipo de aprendizaje automático es supervisado donde ya nos dan la variable a predecir osea etiquetadas, entonces por tal razón se usó estos dos algortimos de clasicación Árboles de decisiones y K vecinos más cercanos o cual es muy adecuado para este tipo de datos. 
 ![444](https://user-images.githubusercontent.com/103965538/199860696-3842dc85-e9d0-4c7b-af2c-dabfd034af66.PNG)
