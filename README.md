@@ -7,35 +7,54 @@ Este proyecto consiste en realizar un modelo predictivo que prediga el precio de
 
 ## Para esto se hizo el el EDA (Análisis Exploratorio de datos), feature engineerging y pipeline de Machine Learning de Mercado, se tuvo en cuenta los siguientes pasos:
 
-- 1. Análisis de los datos de los datasets.
+- **1. Análisis de los datos de los datasets**
+
 Para esta etapa se utilizó diversas librerías y módulos de Python como: pandas,  numpy, los módulos de .head(), .info() y entre otros.
 ![11](https://user-images.githubusercontent.com/103965538/199861223-864d1ed0-0b40-4cb7-b24f-9fe22d1e51b2.PNG)
 
-- 2. Visualización de datos.
+- **2. Visualización de datos**
+
 Aquí se visualizó los datos con "matplotlib" que sirve para graficar gráficos en python, se importó la librería folium y heatmap para realizar las coordenadas geoespaciales.
 ![222](https://user-images.githubusercontent.com/103965538/199860332-9facfb23-ff9c-464e-bb36-18fc418f130a.PNG)
 
-- 3. Limpieza y normalización de datos
+- **3. Limpieza y normalización de datos**
+
 Aquí se limpió el dataset, se hizo normalizacion de datos con los módulos de .replace(), drop()  y entre otros.
-- 4. Imputación de datos 
+
+- **4. Imputación de datos**
+
 Se utilizó .fillna(), replace(), mean() para imputar los datos.
-- 5. Eliminación de columnas irrelevantes de las variables de entrada primera parte.
+
+- **5. Eliminación de columnas irrelevantes de las variables de entrada primera parte**
+
 Es importante que se tenga un buen análisis crítico ya que aquí según al análisis y observación previa en los datasets, yo como data engineer eliminé algunas columnas irrelevantes.
-- 6. Transformación de datos con LabelEncoder :) una facilidad.
+
+- **6. Transformación de datos con LabelEncoder :) una facilidad**
+
 Aquí Importé la librería preprocesing y LabelEncoder que ayuda a transformar los valores categóricos a numéricos con un orden increíble. "LabelEncoder": asigna con un número diferente a cada variable categórica.
-- 7. Selección de características o también llamado eliminación de columnas irrelevantes parte 2.
+
+- **7. Selección de características o también llamado eliminación de columnas irrelevantes parte 2**
+
 Se importa la librería "seaborn" usar estadísticos de correlación, se realizó gracias a los filtros de correlación a las variables de entrada del dataset de entrenamiento, osea que características tienen mayor correlación con la variable a predecir.
 ![333](https://user-images.githubusercontent.com/103965538/199861476-96d001c0-9d95-49f5-a731-351204c38b57.PNG)
 
-- 8. Modelos de clasificación: El tipo de aprendizaje automático es supervisado donde ya nos dan la variable a predecir osea etiquetadas, entonces por tal razón se usó estos dos algortimos de clasicación Árboles de decisiones y K vecinos más cercanos lo cual es muy adecuado para este tipo de datos. 
+- **8. Modelos de clasificación**
+
+El tipo de aprendizaje automático es supervisado donde ya nos dan la variable a predecir osea etiquetadas, entonces por tal razón se usó estos dos algortimos de clasicación Árboles de decisiones y K vecinos más cercanos lo cual es muy adecuado para este tipo de datos. 
+
 ![444](https://user-images.githubusercontent.com/103965538/199860696-3842dc85-e9d0-4c7b-af2c-dabfd034af66.PNG)
 
-- 9. Entrenamiento: Se entrena el modelo de clasificación y el dataset de entrenamiento (X_train = df_train).
+- **9. Entrenamiento**
+
+Se entrena el modelo de clasificación y el dataset de entrenamiento (X_train = df_train).
 Aquí se uso "fit" para entrenar al dataset de entrenamiento, en caso de Árboles de decisiones se uso una profundidad del árbol fue 6 según al cálculo realizado en el script.
-- 10. Con el algoritmo de clasificación de KNN
+
+- **10. Con el algoritmo de clasificación de KNN**
+
 ![66](https://user-images.githubusercontent.com/103965538/199860980-90199c2a-d440-40cd-b92a-8318fdcd5dea.PNG)
 
-- 11. Evaluacíon de las métricas de evaluación.<br>
+- **11. Evaluacíon de las métricas de evaluación**
+
 Con el algoritmo de Árboles de decisiones
 ![55](https://user-images.githubusercontent.com/103965538/199860907-d74a973e-dcab-45a6-a7d3-7709e6692c99.PNG)
 
