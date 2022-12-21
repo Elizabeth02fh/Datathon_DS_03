@@ -1,63 +1,64 @@
 ## EDA, feature engineerging y pipeline de Machine Learning de Mercado Inmoviliario en COLOMBIA
-Según a los datasets proporcionados por el bootcamp SOY HENRY, que es acerca del mercado inmoviliario de Colombia:
-- 'properties_colombia_train.csv': Contiene 197549 registros y 26 dimensiones, el cual incluye la información numérica del precio.
-- 'propiedades_colombia_test.csv': Contiene 65850 registros y 25 dimensiones, el cual no incluye la información del precio.
+### EDA, feature engineerging y pipeline de Machine Learning de Mercado Inmoviliario en COLOMBIA
 
-Este proyecto consiste en realizar un modelo predictivo que prediga el precio de una inmoviliaria entre caro y barato, se calculó el promedio de la columna price (643605091.0064613), donde se asignó "1" a aquellos que son mayores al promedio de "price" = caro y se asignó "0" a los menores al promedio de "price" = barato.
+According to the datasets provided by the SOY HENRY bootcamp, which is about the Colombian real estate market:
+- 'properties_colombia_train.csv': Contains 197549 records and 26 dimensions, which includes numerical price information.
+- 'propiedades_colombia_test.csv': Contains 65850 records and 25 dimensions, which does not include price information.
 
-## Para esto se hizo el el EDA (Análisis Exploratorio de datos), feature engineerging y pipeline de Machine Learning de Mercado, se tuvo en cuenta los siguientes pasos:
+This project consists of making a predictive model that predicts the price of a real estate between expensive and cheap, the average of the price column (643605091.0064613) was calculated, where "1" was assigned to those that are greater than the average of "price" = expensive and "0" was assigned to those less than the average of "price" = cheap.
 
-- **1. Análisis de los datos de los datasets**
+## For this, the EDA (Exploratory Data Analysis), feature engineering and Market Machine Learning pipeline was carried out, the following steps were taken into account:
 
-Para esta etapa se utilizó diversas librerías y módulos de Python como: pandas,  numpy, los módulos de .head(), .info() y entre otros.
+- **1. Analysis of the data from the datasets**
+
+For this stage, various Python libraries and modules were used such as: pandas, numpy, the .head() modules, .info() and among others.
 ![11](https://user-images.githubusercontent.com/103965538/199861223-864d1ed0-0b40-4cb7-b24f-9fe22d1e51b2.PNG)
 
-- **2. Visualización de datos**
+- **2. Data visualization**
 
-Aquí se visualizó los datos con "matplotlib" que sirve para graficar gráficos en python, se importó la librería folium y heatmap para realizar las coordenadas geoespaciales.
+Here the data was visualized with "matplotlib" which is used to plot graphs in python, the folium and heatmap libraries were imported to perform the geospatial coordinates.
 ![222](https://user-images.githubusercontent.com/103965538/199860332-9facfb23-ff9c-464e-bb36-18fc418f130a.PNG)
 
-- **3. Limpieza y normalización de datos**
+- **3. Data cleaning and normalization**
 
-Aquí se limpió el dataset, se hizo normalizacion de datos con los módulos de .replace(), drop()  y entre otros.
+Here the dataset was cleaned, data normalization was done with the modules .replace(), drop() and among others.
 
-- **4. Imputación de datos**
+- **4. Data imputation**
 
-Se utilizó .fillna(), replace(), mean() para imputar los datos.
+We used .fillna(), replace(), mean() to impute the data.
 
-- **5. Eliminación de columnas irrelevantes de las variables de entrada primera parte**
+- **5. Elimination of irrelevant columns of input variables first part**
 
-Es importante que se tenga un buen análisis crítico ya que aquí según al análisis y observación previa en los datasets, yo como data engineer eliminé algunas columnas irrelevantes.
+It is important to have a good critical analysis since here, according to the analysis and previous observation in the datasets, as a data engineer I eliminated some irrelevant columns.
 
-- **6. Transformación de datos con LabelEncoder :) una facilidad**
+- **6. Data transformation with LabelEncoder :) an ease**
 
-Aquí Importé la librería preprocesing y LabelEncoder que ayuda a transformar los valores categóricos a numéricos con un orden increíble. "LabelEncoder": asigna con un número diferente a cada variable categórica.
+Here I imported the preprocessing and LabelEncoder library that helps to transform categorical values ​​to numeric with incredible order. "LabelEncoder": assigns a different number to each categorical variable.
 
-- **7. Selección de características o también llamado eliminación de columnas irrelevantes parte 2**
+- **7. Feature selection or also called irrelevant column removal part 2**
 
-Se importa la librería "seaborn" usar estadísticos de correlación, se realizó gracias a los filtros de correlación a las variables de entrada del dataset de entrenamiento, osea que características tienen mayor correlación con la variable a predecir.
+The "seaborn" library is imported using correlation statistics, it was carried out thanks to the correlation filters to the input variables of the training dataset, that is, which characteristics have a greater correlation with the variable to be predicted.
 ![333](https://user-images.githubusercontent.com/103965538/199861476-96d001c0-9d95-49f5-a731-351204c38b57.PNG)
 
-- **8. Modelos de clasificación**
+- **8. Classification models**
 
-El tipo de aprendizaje automático es supervisado donde ya nos dan la variable a predecir osea etiquetadas, entonces por tal razón se usó estos dos algortimos de clasicación Árboles de decisiones y K vecinos más cercanos lo cual es muy adecuado para este tipo de datos. 
+The type of automatic learning is supervised where they already give us the variable to predict, that is, labeled, so for this reason these two classification algorithms Decision Trees and K nearest neighbors were used, which is very suitable for this type of data.
 
 ![444](https://user-images.githubusercontent.com/103965538/199860696-3842dc85-e9d0-4c7b-af2c-dabfd034af66.PNG)
 
-- **9. Entrenamiento**
+- **9. Training**
 
-Se entrena el modelo de clasificación y el dataset de entrenamiento (X_train = df_train).
-Aquí se uso "fit" para entrenar al dataset de entrenamiento, en caso de Árboles de decisiones se uso una profundidad del árbol fue 6 según al cálculo realizado en el script.
+The classification model and the training dataset (X_train = df_train) are trained.
+Here "fit" was used to train the training dataset, in the case of Decision Trees, a tree depth of 6 was used according to the calculation made in the script.
 
-- **10. Con el algoritmo de clasificación de KNN**
+- **10. With the KNN classification algorithm**
 
 ![66](https://user-images.githubusercontent.com/103965538/199860980-90199c2a-d440-40cd-b92a-8318fdcd5dea.PNG)
 
-- **11. Evaluacíon de las métricas de evaluación**
+- **11. Assessment of evaluation metrics**
 
-Con el algoritmo de Árboles de decisiones
+With the decision tree algorithm
 ![55](https://user-images.githubusercontent.com/103965538/199860907-d74a973e-dcab-45a6-a7d3-7709e6692c99.PNG)
 
-Para concluir, en la Evaluación de las métricas se tuvo en cuenta el accuracy y el recall.
-Se puede ver que el algoritmo de Clasificación de Árboles de decisiones es el algoritmo mas óptimo para predecir si es caro o barato el precio de una inmoviliaria con es este proyecto con datos de Mercado Inmoviliario en COLOMBIA.
-
+To conclude, in the Evaluation of the metrics, accuracy and recall were taken into account.
+It can be seen that the Decision Tree Classification algorithm is the most optimal algorithm to predict if the price of a real estate company is expensive or cheap with this project with data from the Real Estate Market in COLOMBIA.
