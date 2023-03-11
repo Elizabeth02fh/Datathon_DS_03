@@ -1,4 +1,4 @@
-## EDA, feature engineerging y pipeline de Machine Learning de Mercado Inmoviliario en COLOMBIA
+## EDA, feature engineerging y pipeline de Machine Learning of the Real Estate Market in COLOMBIA
 ### EDA, feature engineerging y pipeline de Machine Learning de Mercado Inmoviliario en COLOMBIA
 
 According to the datasets provided by the SOY HENRY bootcamp, which is about the Colombian real estate market:
